@@ -1,0 +1,31 @@
+body {
+    background-color: #184A45FF;
+}
+
+#search-form {
+    outline: 15px inset rgb(148, 180, 177);
+    box-shadow: 65px 65px 10px black;
+}
+
+#search-title {
+    font-family: 'Raleway', sans-serif;
+}
+
+#search-btn {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+#search-btn:hover {
+    background-color: rgb(148, 180, 177);
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 592px) {
+    #search-form {
+        box-shadow: none;
+    }
+    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="A website that fetches data from the Library of Congress API.">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+
+    <title>Library of Congress Search</title>
+</head>
+
+<body>
+
+  <div class="min-vh-100 d-flex align-items-center">
+
+    <section class="w-100 row justify-content-center">
+
+      <div class="col-10 col-md-6 col-lg-5">
+
+        <form class="bg-white my-4 p-5 rounded" id = "search-form">
+
+          <h1 class = "text-center" id = "search-title">Search the Library of Congress</h1>
+          
+          <div class="form-group">
+            <label for="search"></label>
+            <input type="text" id="username" class="form-control" placeholder="Enter your search here..." required />
+          </div>
+
+          <div class="form-group">
+            <label for="referral">Filters</label>
+            <select class="form-control" id="referral">
+              <option disabled selected>Choose a filter...</option>
+              <option id = "maps">Maps</option>
+              <option id = "audio">Audio</option>
+              <option id = "photos">Photos</option>
+              <option id = "manuscripts">Manuscripts</option>
+              <option id = "newspapers">Newspapers</option>
+              <option id = "videos">Film and Videos</option>
+              <option id = "music">Notated Music</option>
+              <option id = "websites">Websites</option>
+            </select>
+          </div>
+
+          <button class="btn btn-block" id = "search-btn">Search</button>
+
+        </form>
+      </div>
+    </section>
+
+  </div>
+    
+</body>
+
+<script src = "script.js"></script>
+
+</html>
