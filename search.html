@@ -36,7 +36,7 @@
       
                 <div class="form-group">
                   <label for="filters">Filter the results...</label>
-                  <select class="form-control" id="filtered-results">
+                  <select class="form-control" id="search-filter">
                     <option disabled selected>Choose a filter...</option>
                     <option id = "maps">Maps</option>
                     <option id = "audio">Audio</option>
@@ -57,23 +57,13 @@
           </div>
 
           <div class="col-12 col-md-12 col-xl-8">
-            <h3 id = 'results-title' class = "text-center text-white">Displaying results for: <span></span></h3>
+            <h3 id = 'results-title' class = "text-center text-white">Displaying results for: <span id = "search-name"></span></h3>
             <div id = "results-container">
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
-                <div class = "single-result"></div>
             </div>
           </div>
     
 </body>
 
-<script src = "script.js"></script>
+<script src = "search.js"></script>
 
 </html>
